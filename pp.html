@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            text-align: center;
+        }
+        .container {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #1f2937;
+            color: white;
+            padding: 4rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 3rem 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        .description {
+            color: #6b7280;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Discover Our Amazing Product</h1>
+        <p>The best solution for your needs, built with quality and precision.</p>
+        <button class="cta-button">Sign Up Now</button>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features container">
+        <h2>Key Features</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="icon">⚡</div>
+                <div class="title">Fast Performance</div>
+                <div class="description">Optimized code ensures lightning-fast load times and smooth performance.</div>
+            </div>
+            <div class="card">
+                <div class="icon">📱</div>
+                <div class="title">Responsive Design</div>
+                <div class="description">Fully responsive layout that adapts seamlessly to all devices.</div>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <div class="title">Easy Customization</div>
+                <div class="description">Easily modify and extend features with minimal effort.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Contact us: email@example.com | (123) 456-7890</p>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
